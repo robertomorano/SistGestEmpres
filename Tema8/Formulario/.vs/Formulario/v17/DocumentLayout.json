@@ -36,7 +36,7 @@
               "RelativeDocumentMoniker": "Formulario\\Views\\Home\\Saludo.cshtml",
               "ToolTip": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\Formulario\\Formulario\\Views\\Home\\Saludo.cshtml",
               "RelativeToolTip": "Formulario\\Views\\Home\\Saludo.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-11-03T13:34:09.17Z",
               "EditorCaption": ""
@@ -51,8 +51,7 @@
               "RelativeToolTip": "Formulario\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAQwCAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T13:11:54.529Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-03T13:11:54.529Z"
             },
             {
               "$type": "Document",
@@ -64,8 +63,7 @@
               "RelativeToolTip": "Formulario\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-03T13:08:52.669Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-03T13:08:52.669Z"
             },
             {
               "$type": "Document",
@@ -77,8 +75,7 @@
               "RelativeToolTip": "Formulario\\Models\\Person.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T13:06:32.565Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-03T13:06:32.565Z"
             }
           ]
         }

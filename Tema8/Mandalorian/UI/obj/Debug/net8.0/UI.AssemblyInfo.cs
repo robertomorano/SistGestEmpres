@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Formulario")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("UI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dfc4210bb07a177ff34a4b395abf54364292c2c0")]
-[assembly: System.Reflection.AssemblyProductAttribute("Formulario")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Formulario")]
+[assembly: System.Reflection.AssemblyProductAttribute("UI")]
+[assembly: System.Reflection.AssemblyTitleAttribute("UI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.
