@@ -33,6 +33,11 @@ namespace Formulario.Controllers
             ViewBag.nome = nome;
             return View();
         }
+        public IActionResult Editar(Person personaModificada)
+        {
+            
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

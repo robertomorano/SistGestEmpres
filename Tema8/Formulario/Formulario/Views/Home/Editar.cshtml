@@ -1,0 +1,35 @@
+﻿@model Formulario.Models.Person
+
+@{
+    ViewBag.Title = "Editar Persona";
+}
+
+<h2>Editar Persona</h2>
+
+@using (Html.BeginForm("Editar", "Home", FormMethod.Post))
+{
+    <div>
+        <label>IdPersona (input HTML)</label><br />
+        <input type="text" name="IdPersona" value="@Model.Departamento" />
+    </div>
+
+    <div>
+        <label>Nombre (Html.TextBox)</label><br />
+        @Html.TextBox("Nombre", Model.Name)
+    </div>
+
+    <div>
+        <label>Apellidos (Html.TextBoxFor)</label><br />
+        @Html.TextBoxFor(model => model.Surname)
+    </div>
+
+    <div>
+        <label>Edad</label><br />
+        @Html.TextBoxFor(model => model.Age)
+    </div>
+
+    
+
+    <br />
+    <input type="submit" value="Guardar cambios" />
+}

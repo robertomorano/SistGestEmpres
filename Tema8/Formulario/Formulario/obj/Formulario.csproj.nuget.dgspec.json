@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\Formulario\\Formulario\\Formulario.csproj": {}
+    "C:\\Users\\rober\\Documents\\GitHub\\SistGestEmpres\\Tema8\\Formulario\\Formulario\\Formulario.csproj": {}
   },
   "projects": {
-    "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\Formulario\\Formulario\\Formulario.csproj": {
+    "C:\\Users\\rober\\Documents\\GitHub\\SistGestEmpres\\Tema8\\Formulario\\Formulario\\Formulario.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\Formulario\\Formulario\\Formulario.csproj",
+        "projectUniqueName": "C:\\Users\\rober\\Documents\\GitHub\\SistGestEmpres\\Tema8\\Formulario\\Formulario\\Formulario.csproj",
         "projectName": "Formulario",
-        "projectPath": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\Formulario\\Formulario\\Formulario.csproj",
-        "packagesPath": "C:\\Users\\roberto.morano\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\Formulario\\Formulario\\obj\\",
+        "projectPath": "C:\\Users\\rober\\Documents\\GitHub\\SistGestEmpres\\Tema8\\Formulario\\Formulario\\Formulario.csproj",
+        "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rober\\Documents\\GitHub\\SistGestEmpres\\Tema8\\Formulario\\Formulario\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\roberto.morano\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rober\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -50,6 +50,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

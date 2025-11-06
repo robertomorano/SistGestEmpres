@@ -32,3 +32,16 @@ C:\Users\roberto.morano\Documents\Proyectos\SistGestEmpres\Tema8\Formulario\Form
 C:\Users\roberto.morano\Documents\Proyectos\SistGestEmpres\Tema8\Formulario\Formulario\obj\Debug\net8.0\Formulario.pdb
 C:\Users\roberto.morano\Documents\Proyectos\SistGestEmpres\Tema8\Formulario\Formulario\obj\Debug\net8.0\Formulario.genruntimeconfig.cache
 C:\Users\roberto.morano\Documents\Proyectos\SistGestEmpres\Tema8\Formulario\Formulario\obj\Debug\net8.0\ref\Formulario.dll
+C:\Users\rober\Documents\GitHub\SistGestEmpres\Tema8\Formulario\Formulario\obj\Debug\net8.0\Formulario.csproj.AssemblyReference.cache
+C:\Users\rober\Documents\GitHub\SistGestEmpres\Tema8\Formulario\Formulario\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\rober\Documents\GitHub\SistGestEmpres\Tema8\Formulario\Formulario\obj\Debug\net8.0\Formulario.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rober\Documents\GitHub\SistGestEmpres\Tema8\Formulario\Formulario\obj\Debug\net8.0\Formulario.AssemblyInfoInputs.cache
+C:\Users\rober\Documents\GitHub\SistGestEmpres\Tema8\Formulario\Formulario\obj\Debug\net8.0\Formulario.AssemblyInfo.cs
+C:\Users\rober\Documents\GitHub\SistGestEmpres\Tema8\Formulario\Formulario\obj\Debug\net8.0\Formulario.csproj.CoreCompileInputs.cache
+C:\Users\rober\Documents\GitHub\SistGestEmpres\Tema8\Formulario\Formulario\obj\Debug\net8.0\Formulario.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\rober\Documents\GitHub\SistGestEmpres\Tema8\Formulario\Formulario\obj\Debug\net8.0\Formulario.RazorAssemblyInfo.cache
+C:\Users\rober\Documents\GitHub\SistGestEmpres\Tema8\Formulario\Formulario\obj\Debug\net8.0\Formulario.RazorAssemblyInfo.cs
+C:\Users\rober\Documents\GitHub\SistGestEmpres\Tema8\Formulario\Formulario\obj\Debug\net8.0\Formulario.sourcelink.json
+C:\Users\rober\Documents\GitHub\SistGestEmpres\Tema8\Formulario\Formulario\obj\Debug\net8.0\Formulario.dll
+C:\Users\rober\Documents\GitHub\SistGestEmpres\Tema8\Formulario\Formulario\obj\Debug\net8.0\refint\Formulario.dll
+C:\Users\rober\Documents\GitHub\SistGestEmpres\Tema8\Formulario\Formulario\obj\Debug\net8.0\Formulario.pdb

@@ -8,14 +8,11 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 
-//Usar para inyeccion
-builder.Services.AddCompositionRoute(builder.Configuration);
-
-
-
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+//Usar para inyeccion
+builder.Services.AddCompositionRoute(builder.Configuration);
 
 
 var app = builder.Build();

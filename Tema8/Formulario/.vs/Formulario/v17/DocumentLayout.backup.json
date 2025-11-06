@@ -1,21 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\Formulario\\",
+  "WorkspaceRootPath": "C:\\Users\\rober\\Documents\\GitHub\\SistGestEmpres\\Tema8\\Formulario\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9D7194C6-95A9-46B6-AC4F-B6699928D641}|Formulario\\Formulario.csproj|c:\\users\\roberto.morano\\documents\\proyectos\\sistgestempres\\tema8\\formulario\\formulario\\views\\home\\saludo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9D7194C6-95A9-46B6-AC4F-B6699928D641}|Formulario\\Formulario.csproj|solutionrelative:formulario\\views\\home\\saludo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D7194C6-95A9-46B6-AC4F-B6699928D641}|Formulario\\Formulario.csproj|c:\\users\\roberto.morano\\documents\\proyectos\\sistgestempres\\tema8\\formulario\\formulario\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9D7194C6-95A9-46B6-AC4F-B6699928D641}|Formulario\\Formulario.csproj|c:\\users\\rober\\documents\\github\\sistgestempres\\tema8\\formulario\\formulario\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D7194C6-95A9-46B6-AC4F-B6699928D641}|Formulario\\Formulario.csproj|solutionrelative:formulario\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D7194C6-95A9-46B6-AC4F-B6699928D641}|Formulario\\Formulario.csproj|c:\\users\\roberto.morano\\documents\\proyectos\\sistgestempres\\tema8\\formulario\\formulario\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{9D7194C6-95A9-46B6-AC4F-B6699928D641}|Formulario\\Formulario.csproj|c:\\users\\rober\\documents\\github\\sistgestempres\\tema8\\formulario\\formulario\\views\\home\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9D7194C6-95A9-46B6-AC4F-B6699928D641}|Formulario\\Formulario.csproj|solutionrelative:formulario\\views\\home\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D7194C6-95A9-46B6-AC4F-B6699928D641}|Formulario\\Formulario.csproj|c:\\users\\rober\\documents\\github\\sistgestempres\\tema8\\formulario\\formulario\\views\\home\\saludo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9D7194C6-95A9-46B6-AC4F-B6699928D641}|Formulario\\Formulario.csproj|solutionrelative:formulario\\views\\home\\saludo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D7194C6-95A9-46B6-AC4F-B6699928D641}|Formulario\\Formulario.csproj|c:\\users\\rober\\documents\\github\\sistgestempres\\tema8\\formulario\\formulario\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9D7194C6-95A9-46B6-AC4F-B6699928D641}|Formulario\\Formulario.csproj|solutionrelative:formulario\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D7194C6-95A9-46B6-AC4F-B6699928D641}|Formulario\\Formulario.csproj|c:\\users\\roberto.morano\\documents\\proyectos\\sistgestempres\\tema8\\formulario\\formulario\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9D7194C6-95A9-46B6-AC4F-B6699928D641}|Formulario\\Formulario.csproj|c:\\users\\rober\\documents\\github\\sistgestempres\\tema8\\formulario\\formulario\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D7194C6-95A9-46B6-AC4F-B6699928D641}|Formulario\\Formulario.csproj|solutionrelative:formulario\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,15 +30,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "Editar.cshtml",
+              "DocumentMoniker": "C:\\Users\\rober\\Documents\\GitHub\\SistGestEmpres\\Tema8\\Formulario\\Formulario\\Views\\Home\\Editar.cshtml",
+              "RelativeDocumentMoniker": "Formulario\\Views\\Home\\Editar.cshtml",
+              "ToolTip": "C:\\Users\\rober\\Documents\\GitHub\\SistGestEmpres\\Tema8\\Formulario\\Formulario\\Views\\Home\\Editar.cshtml",
+              "RelativeToolTip": "Formulario\\Views\\Home\\Editar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-04T19:46:52.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Saludo.cshtml",
-              "DocumentMoniker": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\Formulario\\Formulario\\Views\\Home\\Saludo.cshtml",
+              "DocumentMoniker": "C:\\Users\\rober\\Documents\\GitHub\\SistGestEmpres\\Tema8\\Formulario\\Formulario\\Views\\Home\\Saludo.cshtml",
               "RelativeDocumentMoniker": "Formulario\\Views\\Home\\Saludo.cshtml",
-              "ToolTip": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\Formulario\\Formulario\\Views\\Home\\Saludo.cshtml",
+              "ToolTip": "C:\\Users\\rober\\Documents\\GitHub\\SistGestEmpres\\Tema8\\Formulario\\Formulario\\Views\\Home\\Saludo.cshtml",
               "RelativeToolTip": "Formulario\\Views\\Home\\Saludo.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -43,42 +64,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\Formulario\\Formulario\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\rober\\Documents\\GitHub\\SistGestEmpres\\Tema8\\Formulario\\Formulario\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Formulario\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\Formulario\\Formulario\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\rober\\Documents\\GitHub\\SistGestEmpres\\Tema8\\Formulario\\Formulario\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Formulario\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwCAAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAA6wCQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-03T13:11:54.529Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\Formulario\\Formulario\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\rober\\Documents\\GitHub\\SistGestEmpres\\Tema8\\Formulario\\Formulario\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Formulario\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\Formulario\\Formulario\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\rober\\Documents\\GitHub\\SistGestEmpres\\Tema8\\Formulario\\Formulario\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Formulario\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-03T13:08:52.669Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-03T13:08:52.669Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Person.cs",
-              "DocumentMoniker": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\Formulario\\Formulario\\Models\\Person.cs",
+              "DocumentMoniker": "C:\\Users\\rober\\Documents\\GitHub\\SistGestEmpres\\Tema8\\Formulario\\Formulario\\Models\\Person.cs",
               "RelativeDocumentMoniker": "Formulario\\Models\\Person.cs",
-              "ToolTip": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\Formulario\\Formulario\\Models\\Person.cs",
+              "ToolTip": "C:\\Users\\rober\\Documents\\GitHub\\SistGestEmpres\\Tema8\\Formulario\\Formulario\\Models\\Person.cs",
               "RelativeToolTip": "Formulario\\Models\\Person.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T13:06:32.565Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-03T13:06:32.565Z"
             }
           ]
         }
