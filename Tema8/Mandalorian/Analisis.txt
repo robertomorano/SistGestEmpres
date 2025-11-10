@@ -1,0 +1,28 @@
+/Domain
+	/Repositories
+		4misionRepository:IGetMisionRepository dar una lista de las 4 misiones principales
+/Data
+	/Entities
+		·Mission.cs:Clase para guardar misiones
+			_title
+			_description
+			_bounty
+	/Repositories
+		IGetMissionRepository.cs
+			getMission()
+	/Dto
+		MissionListWihtSelectedMission
+	/Interfaces
+		IGetMissionUseCase.cs
+			getMission()
+	/Usecase
+		MissionListUseCase:IGetMisionUseCase
+		MidnigthUseCase:IGetMisionUseCase
+		
+	
+/UI
+	/Models
+	/Controlers
+		.HomeController
+	/Views
+		·Index.cshtml
