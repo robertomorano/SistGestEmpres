@@ -1,6 +1,9 @@
+/CompositionRoot
+	DI.cs
 /Domain
 	/Repositories
 		4misionRepository:IGetMisionRepository dar una lista de las 4 misiones principales
+			getMission()
 /Data
 	/Entities
 		·Mission.cs:Clase para guardar misiones
@@ -16,12 +19,13 @@
 		IGetMissionUseCase.cs
 			getMission()
 	/Usecase
-		MissionListUseCase:IGetMisionUseCase
-		MidnigthUseCase:IGetMisionUseCase
+		MissionListUseCase:IGetMissionUseCase
+		MidnigthUseCase:IGetMissionUseCase
 		
 	
 /UI
 	/Models
+		MissionListWithSelectedMissionUI.cs
 	/Controlers
 		.HomeController
 	/Views
