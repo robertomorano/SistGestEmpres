@@ -1,7 +1,12 @@
+using CompositionRoot;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+//Usar para inyeccion
+builder.Services.AddCompositionRoute(builder.Configuration);
 
 var app = builder.Build();
 

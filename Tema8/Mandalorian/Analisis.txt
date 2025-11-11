@@ -12,15 +12,18 @@
 			_bounty
 	/Repositories
 		IGetMissionRepository.cs
-			getMission()
+			getMissions()
 	/Dto
 		MissionListWihtSelectedMission
+			Mission
+			MissionList
 	/Interfaces
 		IGetMissionUseCase.cs
-			getMission()
+		MissionListWihtSelectedMission getMissions(id?)
 	/Usecase
-		MissionListUseCase:IGetMissionUseCase
+
 		MidnigthUseCase:IGetMissionUseCase
+			getMissions(id?)
 		
 	
 /UI
@@ -28,5 +31,65 @@
 		MissionListWithSelectedMissionUI.cs
 	/Controlers
 		.HomeController
+		IGetMissionUsecase MissionListUseCase
 	/Views
 		·Index.cshtml
+	/Mapper
+		DtoToUI
+
+xacthPtPT:
+/MandoMissions.sln
+│
+├── /MandoMissions.Domain                   ← Capa de dominio (entidades + lógica + casos de uso)
+│   ├── /Entities
+│   │   └── Mission.cs
+│   │
+│   ├── /Repositories
+│   │   └── IGetMissionRepository.cs
+│   │
+│   ├── /UseCases
+│   │   ├── IGetMissionUseCase.cs
+│   │   ├── GetMissionsUseCase.cs
+│   │   └── MidnightRestrictionUseCase.cs
+│   │
+│   └── /Interfaces
+│       └── IUseCaseResult.cs   ← opcional, si quieres estandarizar resultados
+│
+├── /MandoMissions.Data                     ← Capa de acceso a datos (DAL)
+│   ├── /Repositories
+│   │   └── MissionRepository.cs
+│   │
+│   ├── /Dto
+│   │   └── MissionListWithSelectedMissionDto.cs
+│   │
+│   ├── /Mappers
+│   │   └── MissionMapper.cs   ← mapea Entities <-> DTOs
+│   │
+│   └── /DataContext (opcional, si usas BD)
+│       └── MissionsContext.cs
+│
+├── /MandoMissions.CompositionRoot          ← Proyecto de configuración (inyección de dependencias)
+│   ├── DependencyInjection.cs
+│   └── CompositionRoot.cs
+│
+└── /MandoMissions.WebUI                    ← Capa de presentación ASP.NET MVC
+    ├── /Controllers
+    │   └── HomeController.cs
+    │
+    ├── /Models
+    │   └── MissionListWithSelectedMissionUI.cs
+    │
+    ├── /Mappers
+    │   └── UiMapper.cs   ← mapea DTOs -> Models
+    │
+    ├── /Views
+    │   ├── /Home
+    │   │   └── Index.cshtml
+    │   └── _Layout.cshtml
+    │
+    ├── /wwwroot
+    │   ├── /css
+    │   ├── /js
+    │   └── /img
+    │
+    └── Program.cs / Startup.cs
