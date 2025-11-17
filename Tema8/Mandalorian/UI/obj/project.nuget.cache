@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "NVEp5NZvJsM=",
+  "dgSpecHash": "UsNq2tGJUVA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\rober\\Documents\\GitHub\\SistGestEmpres\\Tema8\\Mandalorian\\UI\\UI.csproj",
+  "projectFilePath": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\Mandalorian\\UI\\UI.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\rober\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.0\\microsoft.extensions.configuration.abstractions.10.0.0.nupkg.sha512",
-    "C:\\Users\\rober\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.0\\microsoft.extensions.dependencyinjection.abstractions.10.0.0.nupkg.sha512",
-    "C:\\Users\\rober\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.0\\microsoft.extensions.primitives.10.0.0.nupkg.sha512"
+    "C:\\Users\\roberto.morano\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.0\\microsoft.extensions.configuration.abstractions.10.0.0.nupkg.sha512",
+    "C:\\Users\\roberto.morano\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.0\\microsoft.extensions.dependencyinjection.abstractions.10.0.0.nupkg.sha512",
+    "C:\\Users\\roberto.morano\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.0\\microsoft.extensions.primitives.10.0.0.nupkg.sha512"
   ],
   "logs": []
 }

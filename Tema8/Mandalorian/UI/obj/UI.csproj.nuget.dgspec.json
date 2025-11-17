@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rober\\Documents\\GitHub\\SistGestEmpres\\Tema8\\Mandalorian\\UI\\UI.csproj": {}
+    "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\Mandalorian\\UI\\UI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rober\\Documents\\GitHub\\SistGestEmpres\\Tema8\\Mandalorian\\CompositionRoot\\CompositionRoot.csproj": {
+    "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\Mandalorian\\CompositionRoot\\CompositionRoot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rober\\Documents\\GitHub\\SistGestEmpres\\Tema8\\Mandalorian\\CompositionRoot\\CompositionRoot.csproj",
+        "projectUniqueName": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\Mandalorian\\CompositionRoot\\CompositionRoot.csproj",
         "projectName": "CompositionRoot",
-        "projectPath": "C:\\Users\\rober\\Documents\\GitHub\\SistGestEmpres\\Tema8\\Mandalorian\\CompositionRoot\\CompositionRoot.csproj",
-        "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rober\\Documents\\GitHub\\SistGestEmpres\\Tema8\\Mandalorian\\CompositionRoot\\obj\\",
+        "projectPath": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\Mandalorian\\CompositionRoot\\CompositionRoot.csproj",
+        "packagesPath": "C:\\Users\\roberto.morano\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\Mandalorian\\CompositionRoot\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\rober\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\roberto.morano\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -76,24 +76,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\rober\\Documents\\GitHub\\SistGestEmpres\\Tema8\\Mandalorian\\Domain\\Domain.csproj": {
+    "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\Mandalorian\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rober\\Documents\\GitHub\\SistGestEmpres\\Tema8\\Mandalorian\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\Mandalorian\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\rober\\Documents\\GitHub\\SistGestEmpres\\Tema8\\Mandalorian\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rober\\Documents\\GitHub\\SistGestEmpres\\Tema8\\Mandalorian\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\Mandalorian\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\roberto.morano\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\Mandalorian\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\rober\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\roberto.morano\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -142,24 +142,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\rober\\Documents\\GitHub\\SistGestEmpres\\Tema8\\Mandalorian\\UI\\UI.csproj": {
+    "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\Mandalorian\\UI\\UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rober\\Documents\\GitHub\\SistGestEmpres\\Tema8\\Mandalorian\\UI\\UI.csproj",
+        "projectUniqueName": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\Mandalorian\\UI\\UI.csproj",
         "projectName": "UI",
-        "projectPath": "C:\\Users\\rober\\Documents\\GitHub\\SistGestEmpres\\Tema8\\Mandalorian\\UI\\UI.csproj",
-        "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rober\\Documents\\GitHub\\SistGestEmpres\\Tema8\\Mandalorian\\UI\\obj\\",
+        "projectPath": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\Mandalorian\\UI\\UI.csproj",
+        "packagesPath": "C:\\Users\\roberto.morano\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\Mandalorian\\UI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\rober\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\roberto.morano\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -175,11 +175,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\rober\\Documents\\GitHub\\SistGestEmpres\\Tema8\\Mandalorian\\CompositionRoot\\CompositionRoot.csproj": {
-                "projectPath": "C:\\Users\\rober\\Documents\\GitHub\\SistGestEmpres\\Tema8\\Mandalorian\\CompositionRoot\\CompositionRoot.csproj"
+              "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\Mandalorian\\CompositionRoot\\CompositionRoot.csproj": {
+                "projectPath": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\Mandalorian\\CompositionRoot\\CompositionRoot.csproj"
               },
-              "C:\\Users\\rober\\Documents\\GitHub\\SistGestEmpres\\Tema8\\Mandalorian\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\rober\\Documents\\GitHub\\SistGestEmpres\\Tema8\\Mandalorian\\Domain\\Domain.csproj"
+              "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\Mandalorian\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\Mandalorian\\Domain\\Domain.csproj"
               }
             }
           }
@@ -218,7 +218,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
