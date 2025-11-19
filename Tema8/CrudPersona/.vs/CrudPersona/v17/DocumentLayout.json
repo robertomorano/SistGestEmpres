@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\CrudPersona\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ADEDCCB6-0C83-42D5-AC00-F262FF4EAE15}|Domain\\Domain.csproj|c:\\users\\roberto.morano\\documents\\proyectos\\sistgestempres\\tema8\\crudpersona\\domain\\personacrudusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADEDCCB6-0C83-42D5-AC00-F262FF4EAE15}|Domain\\Domain.csproj|solutionrelative:domain\\personacrudusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{209E6BCA-AF9A-44B4-AEC0-76E1C8D118F0}|CompositionRoot\\CompositionRoot.csproj|c:\\users\\roberto.morano\\documents\\proyectos\\sistgestempres\\tema8\\crudpersona\\compositionroot\\di.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{209E6BCA-AF9A-44B4-AEC0-76E1C8D118F0}|CompositionRoot\\CompositionRoot.csproj|solutionrelative:compositionroot\\di.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A554446-CD4E-48B3-80E9-715A6CCAB860}|Presentacion\\Presentacion.csproj|c:\\users\\roberto.morano\\documents\\proyectos\\sistgestempres\\tema8\\crudpersona\\presentacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A554446-CD4E-48B3-80E9-715A6CCAB860}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BAE0003-6317-4D4C-82F8-E70887C7622D}|Data\\Data.csproj|c:\\users\\roberto.morano\\documents\\proyectos\\sistgestempres\\tema8\\crudpersona\\data\\database\\conection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BAE0003-6317-4D4C-82F8-E70887C7622D}|Data\\Data.csproj|solutionrelative:data\\database\\conection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BAE0003-6317-4D4C-82F8-E70887C7622D}|Data\\Data.csproj|c:\\users\\roberto.morano\\documents\\proyectos\\sistgestempres\\tema8\\crudpersona\\data\\repositories\\personarepositoryazure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BAE0003-6317-4D4C-82F8-E70887C7622D}|Data\\Data.csproj|solutionrelative:data\\repositories\\personarepositoryazure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADEDCCB6-0C83-42D5-AC00-F262FF4EAE15}|Domain\\Domain.csproj|c:\\users\\roberto.morano\\documents\\proyectos\\sistgestempres\\tema8\\crudpersona\\domain\\repositories\\igetpeoplelistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADEDCCB6-0C83-42D5-AC00-F262FF4EAE15}|Domain\\Domain.csproj|solutionrelative:domain\\repositories\\igetpeoplelistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PersonaCRUDUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\CrudPersona\\Domain\\PersonaCRUDUseCase.cs",
+              "RelativeDocumentMoniker": "Domain\\PersonaCRUDUseCase.cs",
+              "ToolTip": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\CrudPersona\\Domain\\PersonaCRUDUseCase.cs",
+              "RelativeToolTip": "Domain\\PersonaCRUDUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T13:37:35.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DI.cs",
+              "DocumentMoniker": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\CrudPersona\\CompositionRoot\\DI.cs",
+              "RelativeDocumentMoniker": "CompositionRoot\\DI.cs",
+              "ToolTip": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\CrudPersona\\CompositionRoot\\DI.cs",
+              "RelativeToolTip": "CompositionRoot\\DI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T12:46:32.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IGetPeopleListRepository.cs",
+              "DocumentMoniker": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\CrudPersona\\Domain\\Repositories\\IGetPeopleListRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Repositories\\IGetPeopleListRepository.cs",
+              "ToolTip": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\CrudPersona\\Domain\\Repositories\\IGetPeopleListRepository.cs",
+              "RelativeToolTip": "Domain\\Repositories\\IGetPeopleListRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T13:36:31.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Conection.cs",
+              "DocumentMoniker": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\CrudPersona\\Data\\DataBase\\Conection.cs",
+              "RelativeDocumentMoniker": "Data\\DataBase\\Conection.cs",
+              "ToolTip": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\CrudPersona\\Data\\DataBase\\Conection.cs",
+              "RelativeToolTip": "Data\\DataBase\\Conection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T13:29:52.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PersonaRepositoryAzure.cs",
+              "DocumentMoniker": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\CrudPersona\\Data\\Repositories\\PersonaRepositoryAzure.cs",
+              "RelativeDocumentMoniker": "Data\\Repositories\\PersonaRepositoryAzure.cs",
+              "ToolTip": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\CrudPersona\\Data\\Repositories\\PersonaRepositoryAzure.cs",
+              "RelativeToolTip": "Data\\Repositories\\PersonaRepositoryAzure.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T13:17:05.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\CrudPersona\\Presentacion\\Program.cs",
+              "RelativeDocumentMoniker": "Presentacion\\Program.cs",
+              "ToolTip": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\CrudPersona\\Presentacion\\Program.cs",
+              "RelativeToolTip": "Presentacion\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T12:53:20.847Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
