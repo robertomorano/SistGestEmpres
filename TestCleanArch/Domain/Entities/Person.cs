@@ -8,11 +8,19 @@ namespace Domain.Entities
 {
     public class Person
     {
-        private string name;
-        private int age;
-        private string surname;
-        private int _departamento;
+        public int ID;
+        public string name;
+        public int age;
+        public string surname;
+        public string direccion;
+        public DateTime fechaNac;
+        public int _departamento;
+        public string telefono;
 
+        public Person()
+        {
+
+        }
         public Person(string name, int age, string surname, int departamento)
         {
             this.name = name;

@@ -11,10 +11,10 @@ namespace CompositionRoot
 {
     public static class DI
     {
-        public static IServiceCollection AddCompositionRoute(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddCompositionRoot(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddScoped<IGetPeopleListRepository, PersonaRepository>();
-            services.AddScoped<IGetPeopleListUseCase, OnePerDayInWeek>();
+            services.AddScoped<IGetPeopleListRepository, PersonaRepositoryAzure>();
+            services.AddScoped<IGetPeopleListUseCase, CRUDUseCase>();
 
             return services;
         }

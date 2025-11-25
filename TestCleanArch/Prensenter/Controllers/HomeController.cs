@@ -18,11 +18,11 @@ namespace Prensenter.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View(_useCasePeopleList.GetPeopleList());
         }
         public IActionResult ShowOnePerson()
         {
-            return View(_useCasePeopleList.GetPeopleList());
+            return View();
         }
 
         public IActionResult Privacy()

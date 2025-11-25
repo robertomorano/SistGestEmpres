@@ -1,0 +1,74 @@
+﻿/MandoMissions.sln
+│
+├── /CompositionRoot          ← Proyecto de configuración (inyección de dependencias)
+│   ├── DependencyInjection.cs
+│   └── CompositionRoot.cs
+|
+|
+├── /Data                     
+│   ├── /Repositories
+│   │   └── DepartamentoRepositoryAzure.cs
+|   |   └── PersonaRepositoryAzure.cs
+│   │
+│   ├── /Dto
+│   │   └── Dto.cs
+│   ├── /DataBase
+│   │   └── Connection.cs 
+│   │
+│   ├── /Mappers
+│   │   └──    ← mapea Entities <-> DTOs
+│   │
+│
+├── /Domain                   ← Capa de dominio (entidades + lógica + casos de uso)
+│   ├── /Entities
+│   │   ├── Person.cs
+|   |   ├── Departamento.cs
+│   │   
+│   │
+│   ├── /Repositories
+│   │   └── ICRUDPeopleRepository.cs
+|   |               Person[] getPeople()
+│                     int createPerson(Person)
+│                     int deletePerson(id)
+│                     int updatePerson(Person)
+|   |   ├-- ICRUDDepartamentoRepository.cs
+│                     Person[] getDepart()
+│                     int createPerson(Person)
+│                     int deletePerson(id)
+│                     int updatePerson(Person)
+│   │
+│   ├── /UseCases
+│   │   ├── 
+│   │   ├── CRUDPersonUseCase : ICRUDUseCase
+                      Person[] getDepart()
+│                     int createPerson(Person)
+│                     int deletePerson(id)
+│                     int updatePerson(Person)
+│   │   
+│   │
+│   └── /Interfaces
+│       └── ICRUDUseCase.cs
+                Person[] getDepart()
+│               int createPerson(Person)
+│               int deletePerson(id)
+│               int updatePerson(Person)
+│
+│
+└── /UI                    ← Capa de presentación ASP.NET MVC
+    ├── /Controllers
+    │   └── PersonaController.cs inyecta IPeopleUseCase
+                IActionResult crear() return List<Departamento>
+    |   |___DepartamentoController.cs inyecta IDepartamentoUseCase
+    │           IActionResult crear
+    ├── /Models
+    │   └── 
+    │
+    ├── /Mappers
+    │   └── UiMapper.cs   ← mapea DTOs -> Models
+    │
+    ├── /Views
+    │   ├── /Home
+    │   │   └── Index.cshtml
+    │
+    │
+    └── Program.cs 

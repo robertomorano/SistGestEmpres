@@ -9,13 +9,13 @@ using System.Threading.Tasks;
 
 namespace Domain.UseCases
 {
-    public class OnePerDayInWeek : IGetPeopleListUseCase
+    public class CRUDUseCase : IGetPeopleListUseCase
     {
         private readonly IGetPeopleListRepository _repository;
 
-        public OnePerDayInWeek(IGetPeopleListRepository getPeopleList)
+        public CRUDUseCase(IGetPeopleListRepository PeopleListInterface)
         {
-            _repository = getPeopleList;
+            _repository = PeopleListInterface;
         }
             
         public Person[] GetPeopleList()
