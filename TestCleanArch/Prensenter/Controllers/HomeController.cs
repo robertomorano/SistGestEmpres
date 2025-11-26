@@ -8,9 +8,9 @@ namespace Prensenter.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly IGetPeopleListUseCase _useCasePeopleList;
+        private readonly ICRUDPeopleUseCase _useCasePeopleList;
 
-        public HomeController(ILogger<HomeController> logger, IGetPeopleListUseCase useCaseListaPersonas)
+        public HomeController(ILogger<HomeController> logger, ICRUDPeopleUseCase useCaseListaPersonas)
         {
             _logger = logger;
             _useCasePeopleList = useCaseListaPersonas;

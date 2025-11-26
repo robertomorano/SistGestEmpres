@@ -21,7 +21,7 @@ namespace Domain.Entities
         {
 
         }
-        public Person(string name, int age, string surname, int departamento)
+        public Person(string name, int age, string surname, int departamento, string direccion, string telefono, DateTime fechaNac)
         {
             this.name = name;
             this.age = age;

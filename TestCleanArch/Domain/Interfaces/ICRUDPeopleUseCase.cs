@@ -8,8 +8,11 @@ using System.Threading.Tasks;
 
 namespace Domain.Interfaces
 {
-    public interface IGetPeopleListUseCase
+    public interface ICRUDPeopleUseCase
     {
         Person[] GetPeopleList();
+        int InsertPeople(Person person);
+        int UpdatePeople(Person person);
+        int DeletePeople(Person person);
     }
 }

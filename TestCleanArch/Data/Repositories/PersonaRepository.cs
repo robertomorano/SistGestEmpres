@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Data.Repositories
 {
-    public class PersonaRepository : IGetPeopleListRepository
+    public class PersonaRepository : ICRUDPeopleRepository
     {
         Person[] people;
         public PersonaRepository()

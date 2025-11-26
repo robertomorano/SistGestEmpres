@@ -13,7 +13,7 @@ using Data.DataBase;
 
 namespace Data.Repositories
 {
-    public class PersonaRepositoryAzure : IGetPeopleListRepository
+    public class PersonaRepositoryAzure : ICRUDPeopleRepository
     {
 
         public Person[] GetPeopleList()

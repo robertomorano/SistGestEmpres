@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Repositories
 {
-    public interface IGetPeopleListRepository
+    public interface ICRUDPeopleRepository
     {
         Person[] GetPeopleList();
     }

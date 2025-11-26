@@ -13,8 +13,8 @@ namespace CompositionRoot
     {
         public static IServiceCollection AddCompositionRoot(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddScoped<IGetPeopleListRepository, PersonaRepositoryAzure>();
-            services.AddScoped<IGetPeopleListUseCase, CRUDUseCase>();
+            services.AddScoped<ICRUDPeopleRepository, PersonaRepositoryAzure>();
+            services.AddScoped<ICRUDPeopleUseCase, CRUDPersonaUseCase>();
 
             return services;
         }

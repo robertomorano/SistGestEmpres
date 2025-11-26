@@ -22,33 +22,66 @@
 ├── /Domain                   ← Capa de dominio (entidades + lógica + casos de uso)
 │   ├── /Entities
 │   │   ├── Person.cs
-|   |   ├── Departamento.cs
+│   │             int _id
+│   │             string _name
+│   │             string _surname
+│   │             int _age
+│   │             DateTime _birthAge
+│   │             string _direccion
+│   │             string _telefono
+│   │             Persona(todos Atributos)
+│   │   ├── Departamento.cs
+|   │           int id
+                string name
+                Departamento(todos Atributos)
+|   │
+|   │
 │   │   
 │   │
 │   ├── /Repositories
 │   │   └── ICRUDPeopleRepository.cs
-|   |               Person[] getPeople()
+|   |               List<Person> getPeople()
 │                     int createPerson(Person)
 │                     int deletePerson(id)
 │                     int updatePerson(Person)
 |   |   ├-- ICRUDDepartamentoRepository.cs
-│                     Person[] getDepart()
-│                     int createPerson(Person)
-│                     int deletePerson(id)
-│                     int updatePerson(Person)
+│                     List<Departamento> getDepartamentos()
+                      Departamento getDepartamentoById(int id)
+│                     int createDepartment(Departamento)
+│                     int deleteDepartament(id)
+│                     int updateDepartament(Person)
+|   |   |             int checkPeopleInDepartment(int idDepartment)  
 │   │
 │   ├── /UseCases
-│   │   ├── 
+│   │   ├── CRUDDepartamentoUseCase : ICRUDDepartamento
+|                     ICRUDDepartmentRepository _DepartmentRepo
+│                     List<Departamento> getDepartamentos()
+|                      Departamento getDepartamentoById(int id)
+│                     int createDepartment(Departamento)
+│                     int deleteDepartament(id)
+│                     int updateDepartament(Person)
+|   |   |             int checkPeopleInDepartment(int idDepartment)  
+                      
 │   │   ├── CRUDPersonUseCase : ICRUDUseCase
-                      Person[] getDepart()
+                      ICRUDPeopleRepository _PeopleRepo
+|                     ICRUDDepartmentRepository _DepartmentRepo
+|                     List<Person> getPeople()
 │                     int createPerson(Person)
 │                     int deletePerson(id)
 │                     int updatePerson(Person)
+|
+│   ├── /Dto
+│   │   └── PersonDepartmentListDto.cs
+                Person person
+                List<Departamento>
+|   |   └── PersonDepartmentDto.cs
+                Person person
+                string DepartmentName
 │   │   
 │   │
 │   └── /Interfaces
-│       └── ICRUDUseCase.cs
-                Person[] getDepart()
+│       └── ICRUDPersonaUseCase.cs
+                Person[] getPeople()
 │               int createPerson(Person)
 │               int deletePerson(id)
 │               int updatePerson(Person)
@@ -64,7 +97,7 @@
     │   └── 
     │
     ├── /Mappers
-    │   └── UiMapper.cs   ← mapea DTOs -> Models
+    │   └──  ← mapea DTOs -> Models
     │
     ├── /Views
     │   ├── /Home
