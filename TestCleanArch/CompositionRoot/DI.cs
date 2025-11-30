@@ -15,7 +15,8 @@ namespace CompositionRoot
         {
             services.AddScoped<ICRUDPeopleRepository, PersonaRepositoryAzure>();
             services.AddScoped<ICRUDPeopleUseCase, CRUDPersonaUseCase>();
-
+            services.AddScoped<ICRUDDepartamentoRepository, DepartamentoRepo>();
+            services.AddScoped<ICRUDDepartamentoUseCase, CRUDDepartamentoUseCase>();
             return services;
         }
     }

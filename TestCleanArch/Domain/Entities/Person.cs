@@ -16,6 +16,7 @@ namespace Domain.Entities
         public DateTime fechaNac;
         public int _departamento;
         public string telefono;
+        public string foto;
 
         public Person()
         {
@@ -27,6 +28,11 @@ namespace Domain.Entities
             this.age = age;
             this.surname = surname;
             this._departamento = departamento;
+        }
+        public int Id
+        {
+            get { return this.ID; }
+            set { this.ID = value; }
         }
         public string Name
         {
@@ -42,6 +48,11 @@ namespace Domain.Entities
         {
             get { return this.surname; }
             set { this.surname = value; }
+        }
+        public string Foto
+        { 
+            get { return this.foto; }
+            set { this.foto = value; }
         }
         public int Departamento
         {

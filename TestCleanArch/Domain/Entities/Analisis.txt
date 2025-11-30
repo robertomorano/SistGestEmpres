@@ -62,7 +62,7 @@
 │                     int updateDepartament(Person)
 |   |   |             int checkPeopleInDepartment(int idDepartment)  
                       
-│   │   ├── CRUDPersonUseCase : ICRUDUseCase
+│   │   ├── CRUDPersonUseCase : ICRUDPersonaUseCase
                       ICRUDPeopleRepository _PeopleRepo
 |                     ICRUDDepartmentRepository _DepartmentRepo
 |                     List<Person> getPeople()
@@ -81,27 +81,65 @@
 │   │
 │   └── /Interfaces
 │       └── ICRUDPersonaUseCase.cs
-                Person[] getPeople()
+                List<PersonDepartamentDto> getPeople()                PersonDepartmentListDtp getPersonaById(int id)
 │               int createPerson(Person)
 │               int deletePerson(id)
 │               int updatePerson(Person)
+│               
+│       └── ICRUDDepartamentoUseCase.cs
+│               List<Departamento> getDepartamentos()
+│               Departamento getDepartamentoById(int id)
+│               int createDepartamento(Departamento)
+│               int deleteDepartamento(int id)
+│               int updateDepartamento(Departamento)
+│               int checkPersonasInDepartamento(int idDepartamento)
 │
 │
 └── /UI                    ← Capa de presentación ASP.NET MVC
     ├── /Controllers
+        ├── HomeController.cs
+    │   │       IActionResult Index()
     │   └── PersonaController.cs inyecta IPeopleUseCase
-                IActionResult crear() return List<Departamento>
+    │   │       IActionResult Index()
+    │   │       IActionResult Details(int id)
+    │   │       IActionResult Create()
+    │   │       IActionResult Create(PersonaViewModel)
+    │   │       IActionResult Edit(int id)
+    │   │       IActionResult Edit(PersonaViewModel)
+    │   │       IActionResult Delete(int id)
+    │   │       IActionResult DeleteConfirmed(int id)
     |   |___DepartamentoController.cs inyecta IDepartamentoUseCase
-    │           IActionResult crear
+    │           IActionResult Index()
+    │           IActionResult Details(int id)
+    │           IActionResult Create()
+    │           IActionResult Create(DepartamentoViewModel)
+    │           IActionResult Edit(int id)
+    │           IActionResult Edit(DepartamentoViewModel)
+    │           IActionResult Delete(int id)
+    │           IActionResult DeleteConfirmed(int id)
     ├── /Models
     │   └── 
     │
-    ├── /Mappers
+    ├── /Mappersº
     │   └──  ← mapea DTOs -> Models
     │
     ├── /Views
     │   ├── /Home
     │   │   └── Index.cshtml
+    │   │
+    │   ├── /Personas
+    │   │   ├── Index.cshtml
+    │   │   ├── Details.cshtml
+    │   │   ├── Create.cshtml
+    │   │   ├── Edit.cshtml
+    │   │   └── Delete.cshtml
+    │   │
+    │   ├── /Departamentos
+    │   │   ├── Index.cshtml
+    │   │   ├── Details.cshtml
+    │   │   ├── Create.cshtml
+    │   │   ├── Edit.cshtml
+    │   │   └── Delete.cshtml
     │
     │
     └── Program.cs 

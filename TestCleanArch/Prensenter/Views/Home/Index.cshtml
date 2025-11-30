@@ -1,53 +1,51 @@
-﻿@model IEnumerable<Domain.Entities.Person>
-
-@{
-    ViewData["Title"] = "View";
+﻿@{
+    ViewData["Title"] = "Inicio - MandoMissions";
 }
 
-<h1>View</h1>
+<div class="text-center">
+    <h1 class="display-4">Bienvenido a MandoMissions</h1>
+    <p class="lead">Sistema de gestión de personas y departamentos</p>
+</div>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Age)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Surname)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Departamento)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Age)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Surname)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Departamento)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.ID }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.ID })
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<div class="row mt-5">
+    <div class="col-md-6">
+        <div class="card shadow-sm">
+            <div class="card-body text-center">
+                <i class="bi bi-people-fill" style="font-size: 4rem; color: #0d6efd;"></i>
+                <h3 class="card-title mt-3">Personas</h3>
+                <p class="card-text">Gestiona el listado completo de personas, sus datos personales y departamentos asignados.</p>
+                <a asp-controller="Person" asp-action="Index" class="btn btn-primary btn-lg">
+                    <i class="bi bi-arrow-right-circle"></i> Ir a Personas
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card shadow-sm">
+            <div class="card-body text-center">
+                <i class="bi bi-building" style="font-size: 4rem; color: #198754;"></i>
+                <h3 class="card-title mt-3">Departamentos</h3>
+                <p class="card-text">Administra los departamentos de la organización y su estructura.</p>
+                <a asp-controller="Department" asp-action="Index" class="btn btn-success btn-lg">
+                    <i class="bi bi-arrow-right-circle"></i> Ir a Departamentos
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="alert alert-info" role="alert">
+            <h4 class="alert-heading"><i class="bi bi-info-circle"></i> Información</h4>
+            <p>Desde este sistema podrás realizar las siguientes operaciones:</p>
+            <hr>
+            <ul class="mb-0">
+                <li><strong>Personas:</strong> Crear, editar, ver detalles y eliminar registros de personas</li>
+                <li><strong>Departamentos:</strong> Gestionar los departamentos de la organización</li>
+                <li><strong>Nota:</strong> No se puede eliminar un departamento si tiene personas asignadas</li>
+            </ul>
+        </div>
+    </div>
+</div>
