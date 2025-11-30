@@ -12,6 +12,16 @@ namespace Domain.Dtos
     {
         public Person Persona { get; set; }
         public string DepartamentoNombre { get; set; }
+
+        public PersonaDepartamentoDto(Person persona, Departamento departamento)
+        {
+            Persona = persona;
+            DepartamentoNombre = departamento.Name;
+        }
+        public PersonaDepartamentoDto()
+        {
+
+        }
     }
 }
 

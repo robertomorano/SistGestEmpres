@@ -1,4 +1,4 @@
-﻿@model Domain.Dtos.PersonaDepartamentoDto
+﻿@model Domain.Dtos.PersonaDepartamentoListDto
 
 @{
     ViewData["Title"] = "Details";
@@ -7,18 +7,30 @@
 <h1>Details</h1>
 
 <div>
-    <h4>PersonaDepartamentoDto</h4>
+    <h4>PersonaDepartamentoListDto</h4>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DepartamentoNombre)
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Persona.Id)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DepartamentoNombre)
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Persona.Id)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Persona.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Persona.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Departamentos)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Departamentos)
         </dd>
     </dl>
 </div>
 <div>
-    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Persona.Id }) |
     <a asp-action="Index">Back to List</a>
 </div>

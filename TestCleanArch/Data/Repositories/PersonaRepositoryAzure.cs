@@ -37,10 +37,10 @@ namespace Data.Repositories
                     while (miLector.Read())
                     {
                         oPerson = new Person();
-                        oPerson.Id = (int)miLector["IdPersona"];
+                        oPerson.Id = (int)miLector["ID"];
                         oPerson.Name = (string)miLector["Nombre"];
                         oPerson.Surname = (string)miLector["Apellidos"];
-                        oPerson.Age = (int)miLector["Edad"];
+                        //oPerson.Age = (int)miLector["Edad"];
 
                         if (miLector["FechaNacimiento"] != System.DBNull.Value)
                         {
@@ -57,7 +57,7 @@ namespace Data.Repositories
                             oPerson.telefono = (string)miLector["Telefono"];
                         }
 
-                        oPerson.Departamento = (int)miLector["IdDepartamento"];
+                        oPerson.Departamento = (int)miLector["IDDepartamento"];
 
                         if (miLector["Foto"] != System.DBNull.Value)
                         {
@@ -73,7 +73,7 @@ namespace Data.Repositories
             }
             catch (SqlException exSql)
             {
-                throw exSql;
+                //throw exSql;
             }
 
             return listadoPersonas;
@@ -92,7 +92,7 @@ namespace Data.Repositories
             try
             {
                 miConexion.Open();
-                miComando.CommandText = "SELECT * FROM Personas WHERE IdPersona = @Id";
+                miComando.CommandText = "SELECT * FROM Personas WHERE ID = @Id";
                 miComando.Connection = miConexion;
                 miComando.Parameters.AddWithValue("@Id", id);
                 miLector = miComando.ExecuteReader();
@@ -102,10 +102,10 @@ namespace Data.Repositories
                     while (miLector.Read())
                     {
                         oPersona = new Person();
-                        oPersona.Id = (int)miLector["IdPersona"];
+                        oPersona.Id = (int)miLector["ID"];
                         oPersona.Name = (string)miLector["Nombre"];
                         oPersona.Surname = (string)miLector["Apellidos"];
-                        oPersona.Age = (int)miLector["Edad"];
+                        //oPersona.Age = (int)miLector["Edad"];
 
                         if (miLector["FechaNacimiento"] != System.DBNull.Value)
                         {
@@ -122,7 +122,7 @@ namespace Data.Repositories
                             oPersona.telefono = (string)miLector["Telefono"];
                         }
 
-                        oPersona.Departamento = (int)miLector["IdDepartamento"];
+                        oPersona.Departamento = (int)miLector["IDDepartamento"];
 
                         if (miLector["Foto"] != System.DBNull.Value)
                         {
@@ -138,7 +138,7 @@ namespace Data.Repositories
             }
             catch (SqlException exSql)
             {
-                throw exSql;
+                //throw exSql;
             }
 
             return oPersona;
@@ -155,12 +155,12 @@ namespace Data.Repositories
             try
             {
                 miConexion.Open();
-                miComando.CommandText = @"INSERT INTO Personas (Nombre, Apellidos, Edad, FechaNacimiento, Direccion, Telefono, IdDepartamento, Foto) 
-                                         VALUES (@Nombre, @Apellidos, @Edad, @FechaNacimiento, @Direccion, @Telefono, @IdDepartamento, @Foto)";
+                miComando.CommandText = @"INSERT INTO Personas (Nombre, Apellidos, FechaNacimiento, Direccion, Telefono, IDDepartamento, Foto) 
+                                         VALUES (@Nombre, @Apellidos, @FechaNacimiento, @Direccion, @Telefono, @IdDepartamento, @Foto)";
                 miComando.Connection = miConexion;
                 miComando.Parameters.AddWithValue("@Nombre", persona.Name);
                 miComando.Parameters.AddWithValue("@Apellidos", persona.Surname);
-                miComando.Parameters.AddWithValue("@Edad", persona.Age);
+                
 
                 if (persona.fechaNac != DateTime.MinValue)
                 {
@@ -205,7 +205,7 @@ namespace Data.Repositories
             }
             catch (SqlException exSql)
             {
-                throw exSql;
+                //throw exSql;
             }
 
             return resultado;
@@ -222,7 +222,7 @@ namespace Data.Repositories
             try
             {
                 miConexion.Open();
-                miComando.CommandText = "DELETE FROM Personas WHERE IdPersona = @Id";
+                miComando.CommandText = "DELETE FROM Personas WHERE ID = @Id";
                 miComando.Connection = miConexion;
                 miComando.Parameters.AddWithValue("@Id", id);
                 resultado = miComando.ExecuteNonQuery();
@@ -230,7 +230,7 @@ namespace Data.Repositories
             }
             catch (SqlException exSql)
             {
-                throw exSql;
+               // throw exSql;
             }
 
             return resultado;
@@ -250,18 +250,18 @@ namespace Data.Repositories
                 miComando.CommandText = @"UPDATE Personas 
                                          SET Nombre = @Nombre, 
                                              Apellidos = @Apellidos, 
-                                             Edad = @Edad, 
+                                              
                                              FechaNacimiento = @FechaNacimiento, 
                                              Direccion = @Direccion, 
                                              Telefono = @Telefono, 
-                                             IdDepartamento = @IdDepartamento, 
+                                             IDDepartamento = @IdDepartamento, 
                                              Foto = @Foto 
-                                         WHERE IdPersona = @Id";
+                                         WHERE ID = @Id";
                 miComando.Connection = miConexion;
                 miComando.Parameters.AddWithValue("@Id", persona.Id);
                 miComando.Parameters.AddWithValue("@Nombre", persona.Name);
                 miComando.Parameters.AddWithValue("@Apellidos", persona.Surname);
-                miComando.Parameters.AddWithValue("@Edad", persona.Age);
+                
 
                 if (persona.fechaNac != DateTime.MinValue)
                 {
@@ -306,7 +306,7 @@ namespace Data.Repositories
             }
             catch (SqlException exSql)
             {
-                throw exSql;
+               // throw exSql;
             }
 
             return resultado;

@@ -17,6 +17,6 @@ namespace Domain.Interfaces
         PersonaDepartamentoListDto GetPersonaWithDepartamentos(int id);
         int CreatePerson(Person person);
         int UpdatePerson(Person person);
-        int DeletePerson(int id);
+        int DeletePerson(int person);
     }
 }

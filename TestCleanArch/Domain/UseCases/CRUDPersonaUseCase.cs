@@ -28,7 +28,7 @@ namespace Domain.UseCases
 
             foreach (Person persona in listaPersonas)
             {
-                PersonaDepartamentoDto personaDto = new PersonaDepartamentoDto();
+                PersonaDepartamentoDto personaDto = new PersonaDepartamentoDto(persona, _departamentoRepo.GetDepartamentoById(persona.Departamento));
                 personaDto.Persona = persona;
 
                 Departamento departamento = _departamentoRepo.GetDepartamentoById(persona.Departamento);
@@ -54,14 +54,14 @@ namespace Domain.UseCases
 
         public PersonaDepartamentoListDto GetPersonaWithDepartamentos(int id)
         {
-            PersonaDepartamentoListDto personaConDepartamentos = new PersonaDepartamentoListDto();
+            PersonaDepartamentoListDto personaConDepartamentos = new PersonaDepartamentoListDto(_personaRepo.GetPersonById(id), _departamentoRepo.GetDepartamentos());
 
-            Person persona = _personaRepo.GetPersonById(id);
+            /*Person persona = _personaRepo.GetPersonById(id);
             if (persona != null)
             {
                 personaConDepartamentos.Persona = persona;
                 personaConDepartamentos.Departamentos = _departamentoRepo.GetDepartamentos();
-            }
+            }*/
 
             return personaConDepartamentos;
         }

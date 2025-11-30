@@ -32,7 +32,7 @@ namespace Data.Repositories
                     while (miLector.Read())
                     {
                         oDepartamento = new Departamento();
-                        oDepartamento.Id = (int)miLector["IdDepartamento"];
+                        oDepartamento.Id = (int)miLector["ID"];
                         oDepartamento.Name = (string)miLector["Nombre"];
 
                         listadoDepartamentos.Add(oDepartamento);
@@ -44,7 +44,7 @@ namespace Data.Repositories
             }
             catch (SqlException exSql)
             {
-                throw exSql;
+                //throw exSql;
             }
 
             return listadoDepartamentos;
@@ -63,7 +63,7 @@ namespace Data.Repositories
             try
             {
                 miConexion.Open();
-                miComando.CommandText = "SELECT * FROM Departamentos WHERE IdDepartamento = @Id";
+                miComando.CommandText = "SELECT * FROM Departamentos WHERE ID = @Id";
                 miComando.Connection = miConexion;
                 miComando.Parameters.AddWithValue("@Id", id);
                 miLector = miComando.ExecuteReader();
@@ -73,7 +73,7 @@ namespace Data.Repositories
                     while (miLector.Read())
                     {
                         oDepartamento = new Departamento();
-                        oDepartamento.Id = (int)miLector["IdDepartamento"];
+                        oDepartamento.Id = (int)miLector["ID"];
                         oDepartamento.Name = (string)miLector["Nombre"];
 
                         
@@ -85,7 +85,7 @@ namespace Data.Repositories
             }
             catch (SqlException exSql)
             {
-                throw exSql;
+                //throw exSql;
             }
 
             return oDepartamento;
@@ -110,7 +110,7 @@ namespace Data.Repositories
             }
             catch (SqlException exSql)
             {
-                throw exSql;
+                //throw exSql;
             }
 
             return resultado;
@@ -127,7 +127,7 @@ namespace Data.Repositories
             try
             {
                 miConexion.Open();
-                miComando.CommandText = "DELETE FROM Departamentos WHERE IdDepartamento = @Id";
+                miComando.CommandText = "DELETE FROM Departamentos WHERE ID = @Id";
                 miComando.Connection = miConexion;
                 miComando.Parameters.AddWithValue("@Id", id);
                 resultado = miComando.ExecuteNonQuery();
@@ -135,7 +135,7 @@ namespace Data.Repositories
             }
             catch (SqlException exSql)
             {
-                throw exSql;
+                //throw exSql;
             }
 
             return resultado;
@@ -152,7 +152,7 @@ namespace Data.Repositories
             try
             {
                 miConexion.Open();
-                miComando.CommandText = "UPDATE Departamentos SET Nombre = @Nombre WHERE IdDepartamento = @Id";
+                miComando.CommandText = "UPDATE Departamentos SET Nombre = @Nombre WHERE ID = @Id";
                 miComando.Connection = miConexion;
                 miComando.Parameters.AddWithValue("@Id", departamento.Id);
                 miComando.Parameters.AddWithValue("@Nombre", departamento.Name);
@@ -161,7 +161,7 @@ namespace Data.Repositories
             }
             catch (SqlException exSql)
             {
-                throw exSql;
+                //throw exSql;
             }
 
             return resultado;
@@ -178,7 +178,7 @@ namespace Data.Repositories
             try
             {
                 miConexion.Open();
-                miComando.CommandText = "SELECT COUNT(*) FROM Personas WHERE IdDepartamento = @IdDepartamento";
+                miComando.CommandText = "SELECT COUNT(*) FROM Personas WHERE ID = @IdDepartamento";
                 miComando.Connection = miConexion;
                 miComando.Parameters.AddWithValue("@IdDepartamento", idDepartamento);
                 contador = (int)miComando.ExecuteScalar();
@@ -186,7 +186,7 @@ namespace Data.Repositories
             }
             catch (SqlException exSql)
             {
-                throw exSql;
+               // throw exSql;
             }
 
             return contador;

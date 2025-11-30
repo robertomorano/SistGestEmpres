@@ -12,9 +12,10 @@ namespace Domain.Dtos
         public Person Persona { get; set; }
         public List<Departamento> Departamentos { get; set; }
 
-        public PersonaDepartamentoListDto()
+        public PersonaDepartamentoListDto(Person persona, List<Departamento> departamentos)
         {
-            Departamentos = new List<Departamento>();
+            Persona = persona;
+            Departamentos = departamentos;
         }
     }
 }

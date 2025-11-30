@@ -33,19 +33,18 @@ namespace Prensenter.Controllers
                 return NotFound();
             }
 
-            Person persona = _personaUseCase.GetPersonById(id);
+            PersonaDepartamentoListDto personaDto = _personaUseCase.GetPersonaWithDepartamentos(id);
 
-            if (persona == null)
+            if (personaDto == null)
             {
                 return NotFound();
             }
 
             // Obtener el departamento para mostrar el nombre
-            Departamento departamento = _departamentoUseCase.GetDepartamentoById(persona.Departamento);
+            
 
-            PersonaDepartamentoDto personaDto = new PersonaDepartamentoDto();
-            personaDto.Persona = persona;
-            personaDto.DepartamentoNombre = departamento != null ? departamento.Name : "Sin departamento";
+            
+            
 
             return View(personaDto);
         }
@@ -88,10 +87,7 @@ namespace Prensenter.Controllers
         // GET: Personas/Edit/5
         public IActionResult Edit(int id)
         {
-            if (id <= 0)
-            {
-                return NotFound();
-            }
+            
 
             Person persona = _personaUseCase.GetPersonById(id);
 
@@ -111,10 +107,7 @@ namespace Prensenter.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Edit(int id, Person persona)
         {
-            if (id != persona.Id)
-            {
-                return NotFound();
-            }
+            
 
             if (ModelState.IsValid)
             {
@@ -140,10 +133,7 @@ namespace Prensenter.Controllers
         // GET: Personas/Delete/5
         public IActionResult Delete(int id)
         {
-            if (id <= 0)
-            {
-                return NotFound();
-            }
+            
 
             Person persona = _personaUseCase.GetPersonById(id);
 
@@ -155,9 +145,9 @@ namespace Prensenter.Controllers
             // Obtener el departamento para mostrar el nombre
             Departamento departamento = _departamentoUseCase.GetDepartamentoById(persona.Departamento);
 
-            PersonaDepartamentoDto personaDto = new PersonaDepartamentoDto();
-            personaDto.Persona = persona;
-            personaDto.DepartamentoNombre = departamento != null ? departamento.Name : "Sin departamento";
+            PersonaDepartamentoDto personaDto = new PersonaDepartamentoDto(persona, departamento);
+            //personaDto.Persona = persona;
+            //personaDto.DepartamentoNombre = departamento != null ? departamento.Name : "Sin departamento";
 
             return View(personaDto);
         }
