@@ -1,0 +1,28 @@
+﻿@model Domain.Dtos.PersonaDepartamentoListDto
+
+@{
+    ViewData["Title"] = "Createa";
+}
+
+<h1>Createa</h1>
+
+<h4>PersonaDepartamentoListDto</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Createa">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

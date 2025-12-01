@@ -78,8 +78,8 @@ namespace Prensenter.Controllers
             }
 
             // Si hay error, recargar lista de departamentos
-            List<Departamento> departamentos = _departamentoUseCase.GetDepartamentos();
-            ViewBag.Departamentos = new SelectList(departamentos, "Id", "Name");
+            /*List<Departamento> departamentos = _departamentoUseCase.GetDepartamentos();
+            ViewBag.Departamentos = new SelectList(departamentos, "Id", "Name");*/
 
             return View(persona);
         }
@@ -96,8 +96,8 @@ namespace Prensenter.Controllers
                 return NotFound();
             }
 
-            List<Departamento> departamentos = _departamentoUseCase.GetDepartamentos();
-            ViewBag.Departamentos = new SelectList(departamentos, "Id", "Name", persona.Departamento);
+            /*List<Departamento> departamentos = _departamentoUseCase.GetDepartamentos();
+            ViewBag.Departamentos = new SelectList(departamentos, "Id", "Name", persona.Departamento);*/
 
             return View(persona);
         }
@@ -124,8 +124,8 @@ namespace Prensenter.Controllers
             }
 
             // Si hay error, recargar lista de departamentos
-            List<Departamento> departamentos = _departamentoUseCase.GetDepartamentos();
-            ViewBag.Departamentos = new SelectList(departamentos, "Id", "Name", persona.Departamento);
+           /* List<Departamento> departamentos = _departamentoUseCase.GetDepartamentos();
+            ViewBag.Departamentos = new SelectList(departamentos, "Id", "Name", persona.Departamento);*/
 
             return View(persona);
         }
