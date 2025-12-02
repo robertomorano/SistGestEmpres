@@ -21,7 +21,7 @@ namespace Prensenter.Controllers.API
             _departamentoUseCase = departamentoUseCase;
         }
         // GET: api/<PersonasController>
-        [HttpGet]
+        
         [HttpGet]
         public IActionResult Get()
         {
@@ -52,23 +52,74 @@ namespace Prensenter.Controllers.API
 
         // GET api/<PersonasController>/5
         [HttpGet("{id}")]
-        public Person Get(int id)
+        public IActionResult Get(int id)
         {
-            return _personaUseCase.GetPersonById(id);
+            IActionResult salida;
+            Person persona;
+
+            try
+            {
+
+                persona = _personaUseCase.GetPersonById(id);
+                
+                
+                
+                    salida = Ok(persona);
+                
+            }
+            catch
+            {
+                salida = BadRequest();
+            }
+            return salida;
         }
 
         // POST api/<PersonasController>
         [HttpPost]
         public IActionResult Post(Person person)
         {
-            return Ok(_personaUseCase.CreatePerson(person));
+            IActionResult salida;
+            int result;
+
+            try
+            {
+
+                result = _personaUseCase.CreatePerson(person);
+
+
+
+                salida = Ok(result);
+
+            }
+            catch
+            {
+                salida = BadRequest();
+            }
+            return salida;
         }
 
         // PUT api/<PersonasController>/5
         [HttpPut("{id}")]
         public IActionResult Put(int id, Person person)
         {
-            return Ok(_personaUseCase.UpdatePerson(person));
+            IActionResult salida;
+            int result;
+
+            try
+            {
+
+                result = _personaUseCase.UpdatePerson(person);
+
+
+
+                salida = Ok(result);
+
+            }
+            catch
+            {
+                salida = BadRequest();
+            }
+            return salida;
         }
 
         // DELETE api/<PersonasController>/5

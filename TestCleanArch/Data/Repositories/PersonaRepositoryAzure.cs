@@ -15,6 +15,17 @@ namespace Data.Repositories
 {
     public class PersonaRepositoryAzure : ICRUDPeopleRepository
     {
+        
+        
+        /// <summary>
+        /// Retrieves a list of people from the database.
+        /// </summary>
+        /// <remarks>This method executes a SQL query to fetch all records from the "Personas" table and
+        /// maps the results to a list of <see cref="Person"/> objects. Each record is converted into a <see
+        /// cref="Person"/> instance, with null checks applied to optional fields such as "FechaNacimiento",
+        /// "Direccion", "Telefono", and "Foto".</remarks>
+        /// <returns>A <see cref="List{T}"/> of <see cref="Person"/> objects representing the people retrieved from the database.
+        /// If no records are found, an empty list is returned.</returns>
         public List<Person> GetPeopleList()
         {
             SqlConnection miConexion = new SqlConnection();

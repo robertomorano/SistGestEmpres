@@ -33,7 +33,7 @@ namespace Prensenter.Controllers
                 return NotFound();
             }
 
-            PersonaDepartamentoListDto personaDto = _personaUseCase.GetPersonaWithDepartamentos(id);
+            PersonaDepartamentoDto personaDto = _personaUseCase.GetPersonDepById(id);
 
             if (personaDto == null)
             {
@@ -52,8 +52,8 @@ namespace Prensenter.Controllers
         // GET: Personas/Create
         public IActionResult Create()
         {
-            List<Departamento> departamentos = _departamentoUseCase.GetDepartamentos();
-            ViewBag.Departamentos = new SelectList(departamentos, "Id", "Name");
+            /*List<Departamento> departamentos = _departamentoUseCase.GetDepartamentos();
+            ViewBag.Departamentos = new SelectList(departamentos, "Id", "Name");*/
 
             return View();
         }
@@ -87,65 +87,64 @@ namespace Prensenter.Controllers
         // GET: Personas/Edit/5
         public IActionResult Edit(int id)
         {
-            
+            IActionResult resultado;
 
-            Person persona = _personaUseCase.GetPersonById(id);
+            PersonaDepartamentoListDto persona = _personaUseCase.GetPersonaWithDepartamentos(id);
 
             if (persona == null)
             {
-                return NotFound();
+                resultado = NotFound();
+            }else
+            {
+                resultado = View(persona);
             }
 
             /*List<Departamento> departamentos = _departamentoUseCase.GetDepartamentos();
             ViewBag.Departamentos = new SelectList(departamentos, "Id", "Name", persona.Departamento);*/
-
-            return View(persona);
+            
+            
+            return resultado;
         }
 
         // POST: Personas/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(int id, Person persona)
+        public IActionResult Edit(int id, Person persona) 
         {
             
 
-            if (ModelState.IsValid)
-            {
+            
                 int resultado = _personaUseCase.UpdatePerson(persona);
 
-                if (resultado > 0)
-                {
+                
                     return RedirectToAction(nameof(Index));
-                }
-                else
-                {
-                    ModelState.AddModelError("", "Error al actualizar la persona");
-                }
-            }
+                
+                
+            
 
             // Si hay error, recargar lista de departamentos
            /* List<Departamento> departamentos = _departamentoUseCase.GetDepartamentos();
             ViewBag.Departamentos = new SelectList(departamentos, "Id", "Name", persona.Departamento);*/
 
-            return View(persona);
+            //return View(persona);
         }
 
         // GET: Personas/Delete/5
         public IActionResult Delete(int id)
         {
-            
 
-            Person persona = _personaUseCase.GetPersonById(id);
+            PersonaDepartamentoDto personaDto = _personaUseCase.GetPersonDepById(id);
 
-            if (persona == null)
+
+            if (personaDto == null)
             {
                 return NotFound();
             }
 
             // Obtener el departamento para mostrar el nombre
-            Departamento departamento = _departamentoUseCase.GetDepartamentoById(persona.Departamento);
+            
 
-            PersonaDepartamentoDto personaDto = new PersonaDepartamentoDto(persona, departamento);
+            
             //personaDto.Persona = persona;
             //personaDto.DepartamentoNombre = departamento != null ? departamento.Name : "Sin departamento";
 

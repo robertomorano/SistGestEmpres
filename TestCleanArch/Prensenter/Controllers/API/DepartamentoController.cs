@@ -1,4 +1,6 @@
-﻿using Domain.Interfaces;
+﻿using Domain.Dtos;
+using Domain.Entities;
+using Domain.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -9,11 +11,11 @@ namespace Prensenter.Controllers.API
     [ApiController]
     public class DepartamentoController : ControllerBase
     {
-        private readonly ICRUDPeopleUseCase _personaUseCase;
+     
         private readonly ICRUDDepartamentoUseCase _departamentoUseCase;
-        public DepartamentoController(ICRUDPeopleUseCase personaUseCase, ICRUDDepartamentoUseCase departamentoUseCase)
+        public DepartamentoController( ICRUDDepartamentoUseCase departamentoUseCase)
         {
-            _personaUseCase = personaUseCase;
+     
             _departamentoUseCase = departamentoUseCase;
         }
 
@@ -21,32 +23,130 @@ namespace Prensenter.Controllers.API
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok(  );
+            IActionResult salida;
+            List<Departamento> listadoCompleto = new List<Departamento>();
+
+            try
+            {
+
+                listadoCompleto = _departamentoUseCase.GetDepartamentos();
+                if (listadoCompleto.Count() == 0)
+                {
+                    salida = NoContent();
+                }
+                else
+                {
+                    salida = Ok(listadoCompleto);
+                }
+            }
+            catch
+            {
+                salida = BadRequest();
+            }
+            return salida;
+
         }
 
-        // GET api/<DepartamentoController>/5
+
+        // GET api/<PersonasController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public IActionResult Get(int id)
         {
-            return "value";
+            IActionResult salida;
+            Departamento departamento;
+
+            try
+            {
+
+                departamento = _departamentoUseCase.GetDepartamentoById(id);
+
+
+
+                salida = Ok(departamento);
+
+            }
+            catch
+            {
+                salida = BadRequest();
+            }
+            return salida;
         }
 
-        // POST api/<DepartamentoController>
+        // POST api/<PersonasController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public IActionResult Post(Departamento departamento)
         {
+            IActionResult salida;
+            int result;
+
+            try
+            {
+
+                result = _departamentoUseCase.CreateDepartamento(departamento);
+
+
+
+                salida = Ok(result);
+
+            }
+            catch
+            {
+                salida = BadRequest();
+            }
+            return salida;
         }
 
-        // PUT api/<DepartamentoController>/5
+        // PUT api/<PersonasController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public IActionResult Put(int id, Departamento departamento)
         {
+            IActionResult salida;
+            int result;
+
+            try
+            {
+
+                result = _departamentoUseCase.UpdateDepartamento(departamento);
+
+
+
+                salida = Ok(result);
+
+            }
+            catch
+            {
+                salida = BadRequest();
+            }
+            return salida;
         }
 
-        // DELETE api/<DepartamentoController>/5
+        // DELETE api/<PersonasController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public IActionResult Delete(int id)
         {
+            IActionResult salida;
+            int numFilasAfectadas = 0;
+
+
+            try
+            {
+
+                numFilasAfectadas = _departamentoUseCase.DeleteDepartamento(id);
+                if (numFilasAfectadas == 0)
+                {
+                    salida = NotFound();
+                }
+                else
+                {
+                    salida = Ok();
+                }
+            }
+            catch (Exception e)
+            {
+                salida = BadRequest();
+            }
+
+            return salida;
         }
     }
 }

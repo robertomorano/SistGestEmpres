@@ -14,6 +14,7 @@ namespace Domain.Interfaces
         
         List<PersonaDepartamentoDto> GetPeopleList();
         Person GetPersonById(int id);
+        PersonaDepartamentoDto GetPersonDepById(int id);
         PersonaDepartamentoListDto GetPersonaWithDepartamentos(int id);
         int CreatePerson(Person person);
         int UpdatePerson(Person person);

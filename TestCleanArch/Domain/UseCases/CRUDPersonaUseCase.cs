@@ -1,12 +1,13 @@
-﻿using Domain.Entities;
+﻿using Domain.Dtos;
+using Domain.Entities;
 using Domain.Interfaces;
 using Domain.Repositories;
-using Domain.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Domain.UseCases
 {
@@ -46,6 +47,17 @@ namespace Domain.UseCases
 
             return listaPersonasDepartamento;
         }
+        public PersonaDepartamentoDto GetPersonDepById(int id)
+        {
+            Person persona = GetPersonById(id);
+
+
+
+            // Obtener el departamento para mostrar el nombre
+            Departamento departamento = _departamentoRepo.GetDepartamentoById(persona.Departamento);
+            PersonaDepartamentoDto personaDto = new PersonaDepartamentoDto(persona, departamento);
+            return personaDto;
+        }
 
         public Person GetPersonById(int id)
         {
@@ -65,6 +77,8 @@ namespace Domain.UseCases
 
             return personaConDepartamentos;
         }
+
+        
 
         public int CreatePerson(Person persona)
         {
