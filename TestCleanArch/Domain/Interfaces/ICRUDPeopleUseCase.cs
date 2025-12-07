@@ -11,7 +11,7 @@ namespace Domain.Interfaces
 {
     public interface ICRUDPeopleUseCase
     {
-        
+        List<Person> GetPeople();
         List<PersonaDepartamentoDto> GetPeopleList();
         Person GetPersonById(int id);
         PersonaDepartamentoDto GetPersonDepById(int id);

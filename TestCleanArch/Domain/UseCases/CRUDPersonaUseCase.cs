@@ -22,6 +22,10 @@ namespace Domain.UseCases
             _departamentoRepo = departamentoRepo;
         }
 
+        public List<Person> GetPeople()
+        {
+            return _personaRepo.GetPeopleList();
+        }
         public List<PersonaDepartamentoDto> GetPeopleList()
         {
             List<PersonaDepartamentoDto> listaPersonasDepartamento = new List<PersonaDepartamentoDto>();

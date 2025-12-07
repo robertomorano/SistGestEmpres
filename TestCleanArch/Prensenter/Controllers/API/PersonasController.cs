@@ -26,12 +26,12 @@ namespace Prensenter.Controllers.API
         public IActionResult Get()
         {
             IActionResult salida;
-            List<PersonaDepartamentoDto> listadoCompleto = new List<PersonaDepartamentoDto>();
+            List<Person> listadoCompleto = new List<Person>();
 
             try
             {
 
-                listadoCompleto = _personaUseCase.GetPeopleList();
+                listadoCompleto = _personaUseCase.GetPeople();
                 if (listadoCompleto.Count() == 0)
                 {
                     salida = NoContent();
