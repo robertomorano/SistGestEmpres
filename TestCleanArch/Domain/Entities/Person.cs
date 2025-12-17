@@ -3,14 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace Domain.Entities
 {
     public class Person
     {
         public int ID;
+        [Display(Name = "Nombre")]
         public string name;
+        
+        
         public int age;
+
+        [MaxLength(60),Required]
         public string surname;
         public string direccion;
         public DateTime fechaNac;
