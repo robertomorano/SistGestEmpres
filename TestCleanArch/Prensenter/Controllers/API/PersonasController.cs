@@ -34,8 +34,8 @@ namespace Prensenter.Controllers.API
                 listadoCompleto = _personaUseCase.GetPeople();
                 if (listadoCompleto.Count() == 0)
                 {
-                    salida = NoContent();
-                }
+                    salida = Ok(listadoCompleto);
+				}
                 else
                 {
                     salida = Ok(listadoCompleto);

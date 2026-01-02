@@ -30,6 +30,7 @@ namespace Prensenter.Controllers.API
             {
 
                 listadoCompleto = _departamentoUseCase.GetDepartamentos();
+                
                 if (listadoCompleto.Count() == 0)
                 {
                     salida = NoContent();
