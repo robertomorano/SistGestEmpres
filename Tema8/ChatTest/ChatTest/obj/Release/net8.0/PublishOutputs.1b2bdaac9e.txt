@@ -1,0 +1,8 @@
+C:\Users\roberto.morano\Documents\Proyectos\SistGestEmpres\Tema8\ChatTest\ChatTest\obj\Release\net8.0\PubTmp\Out\ChatTest.exe
+C:\Users\roberto.morano\Documents\Proyectos\SistGestEmpres\Tema8\ChatTest\ChatTest\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+C:\Users\roberto.morano\Documents\Proyectos\SistGestEmpres\Tema8\ChatTest\ChatTest\obj\Release\net8.0\PubTmp\Out\appsettings.json
+C:\Users\roberto.morano\Documents\Proyectos\SistGestEmpres\Tema8\ChatTest\ChatTest\obj\Release\net8.0\PubTmp\Out\libman.json
+C:\Users\roberto.morano\Documents\Proyectos\SistGestEmpres\Tema8\ChatTest\ChatTest\obj\Release\net8.0\PubTmp\Out\ChatTest.dll
+C:\Users\roberto.morano\Documents\Proyectos\SistGestEmpres\Tema8\ChatTest\ChatTest\obj\Release\net8.0\PubTmp\Out\ChatTest.deps.json
+C:\Users\roberto.morano\Documents\Proyectos\SistGestEmpres\Tema8\ChatTest\ChatTest\obj\Release\net8.0\PubTmp\Out\ChatTest.runtimeconfig.json
+C:\Users\roberto.morano\Documents\Proyectos\SistGestEmpres\Tema8\ChatTest\ChatTest\obj\Release\net8.0\PubTmp\Out\ChatTest.pdb
