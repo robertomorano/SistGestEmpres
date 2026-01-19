@@ -1,9 +1,23 @@
-<p>formulario works!</p>
-<form>
-    <label>nOMBRE</label>
-    <input type="text" placeholder="fRAnCcOISco mANSIEANUE"/>
-    <br>
-    <label>aPELElLido</label>
-    <input type="text" placeholder="OPelLoIDo"/>
+<form [formGroup]="formulario">
+
+<p>
+    
+<span>Nombre:</span>
+
+<input type="text" id="nombre" formControlName="nombre"/>
+@if((formulario.controls['nombre'].dirty || formulario.controls['nombre'].touched)&&this.formulario.controls['nombre'].errors?.['required']){
+    <span>FEaboñudfaw</span>
+}
+</p>
+
+<p>
+
+<span>Apellidos:</span>
+
+<input type="text" formControlName="apellidos"/>
+
+</p>
+
+<button type="button" (click)="saluda()">Saludar</button>
 
 </form>
