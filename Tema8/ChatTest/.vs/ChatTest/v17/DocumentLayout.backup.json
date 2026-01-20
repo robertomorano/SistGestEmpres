@@ -7,8 +7,12 @@
       "RelativeMoniker": "D:0:0:{EF383367-0025-48AE-93F4-9F9E12FB6E64}|ChatTest\\ChatTest.csproj|solutionrelative:chattest\\wwwroot\\js\\chat.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF383367-0025-48AE-93F4-9F9E12FB6E64}|ChatTest\\ChatTest.csproj|c:\\users\\roberto.morano\\documents\\proyectos\\sistgestempres\\tema8\\chattest\\chattest\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EF383367-0025-48AE-93F4-9F9E12FB6E64}|ChatTest\\ChatTest.csproj|solutionrelative:chattest\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EF383367-0025-48AE-93F4-9F9E12FB6E64}|ChatTest\\ChatTest.csproj|c:\\users\\roberto.morano\\documents\\proyectos\\sistgestempres\\tema8\\chattest\\chattest\\wwwroot\\js\\clsmensajeusuario.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{EF383367-0025-48AE-93F4-9F9E12FB6E64}|ChatTest\\ChatTest.csproj|solutionrelative:chattest\\wwwroot\\js\\clsmensajeusuario.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF383367-0025-48AE-93F4-9F9E12FB6E64}|ChatTest\\ChatTest.csproj|c:\\users\\roberto.morano\\documents\\proyectos\\sistgestempres\\tema8\\chattest\\chattest\\entities\\clsmensajeusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF383367-0025-48AE-93F4-9F9E12FB6E64}|ChatTest\\ChatTest.csproj|solutionrelative:chattest\\entities\\clsmensajeusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EF383367-0025-48AE-93F4-9F9E12FB6E64}|ChatTest\\ChatTest.csproj|c:\\users\\roberto.morano\\documents\\proyectos\\sistgestempres\\tema8\\chattest\\chattest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,6 +21,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{EF383367-0025-48AE-93F4-9F9E12FB6E64}|ChatTest\\ChatTest.csproj|c:\\users\\roberto.morano\\documents\\proyectos\\sistgestempres\\tema8\\chattest\\chattest\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EF383367-0025-48AE-93F4-9F9E12FB6E64}|ChatTest\\ChatTest.csproj|solutionrelative:chattest\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF383367-0025-48AE-93F4-9F9E12FB6E64}|ChatTest\\ChatTest.csproj|c:\\users\\roberto.morano\\documents\\proyectos\\sistgestempres\\tema8\\chattest\\chattest\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF383367-0025-48AE-93F4-9F9E12FB6E64}|ChatTest\\ChatTest.csproj|solutionrelative:chattest\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +34,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "clsMensajeUsuario.js",
+              "DocumentMoniker": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\ChatTest\\ChatTest\\wwwroot\\js\\clsMensajeUsuario.js",
+              "RelativeDocumentMoniker": "ChatTest\\wwwroot\\js\\clsMensajeUsuario.js",
+              "ToolTip": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\ChatTest\\ChatTest\\wwwroot\\js\\clsMensajeUsuario.js",
+              "RelativeToolTip": "ChatTest\\wwwroot\\js\\clsMensajeUsuario.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-01-20T09:51:10.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "clsMensajeUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\ChatTest\\ChatTest\\Entities\\clsMensajeUsuario.cs",
+              "RelativeDocumentMoniker": "ChatTest\\Entities\\clsMensajeUsuario.cs",
+              "ToolTip": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\ChatTest\\ChatTest\\Entities\\clsMensajeUsuario.cs",
+              "RelativeToolTip": "ChatTest\\Entities\\clsMensajeUsuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T09:44:39.804Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -40,14 +74,14 @@
               "RelativeDocumentMoniker": "ChatTest\\wwwroot\\js\\chat.js",
               "ToolTip": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\ChatTest\\ChatTest\\wwwroot\\js\\chat.js",
               "RelativeToolTip": "ChatTest\\wwwroot\\js\\chat.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2026-01-15T12:20:32.152Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\ChatTest\\ChatTest\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "ChatTest\\Pages\\Index.cshtml",
@@ -60,26 +94,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ChatHub.cs",
               "DocumentMoniker": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\ChatTest\\ChatTest\\Hubs\\ChatHub.cs",
               "RelativeDocumentMoniker": "ChatTest\\Hubs\\ChatHub.cs",
               "ToolTip": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\ChatTest\\ChatTest\\Hubs\\ChatHub.cs",
               "RelativeToolTip": "ChatTest\\Hubs\\ChatHub.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-15T12:15:48.051Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\ChatTest\\ChatTest\\Program.cs",
               "RelativeDocumentMoniker": "ChatTest\\Program.cs",
               "ToolTip": "C:\\Users\\roberto.morano\\Documents\\Proyectos\\SistGestEmpres\\Tema8\\ChatTest\\ChatTest\\Program.cs",
               "RelativeToolTip": "ChatTest\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-15T12:14:12.786Z",
               "EditorCaption": ""
