@@ -2,12 +2,11 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "cli": {
-    "packageManager": "npm",
-    "analytics": "6b45a078-2e0a-4a35-8d49-2a9920491b24"
+    "packageManager": "npm"
   },
   "newProjectRoot": "projects",
   "projects": {
-    "Pruevba": {
+    "ListadoPersonasClean": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -26,7 +25,6 @@
               }
             ],
             "styles": [
-              "src/material-theme.scss",
               "src/styles.css"
             ]
           },
@@ -58,10 +56,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Pruevba:build:production"
+              "buildTarget": "ListadoPersonasClean:build:production"
             },
             "development": {
-              "buildTarget": "Pruevba:build:development"
+              "buildTarget": "ListadoPersonasClean:build:development"
             }
           },
           "defaultConfiguration": "development"

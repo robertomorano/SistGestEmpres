@@ -1,23 +1,45 @@
-<form [formGroup]="formulario">
+<div class="main-div">
+  <mat-card class="formularioCard">
+    <mat-card-header>
+      <mat-card-title>Formulario Reactivo</mat-card-title>
+    </mat-card-header>
 
-<p>
-    
-<span>Nombre:</span>
+    <form [formGroup]="formulario">
+      <mat-card-content>
+        
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Nombre</mat-label>
+          <input matInput placeholder="Escribe tu nombre" formControlName="nombre">
+          
+          @if (formulario.get('nombre')?.touched) {
+            @if (formulario.get('nombre')?.hasError('required')) {
+              <mat-error>El campo no puede estar vacío</mat-error>
+            }
+            @if (formulario.get('nombre')?.hasError('minlength')) {
+              <mat-error>Mínimo 4 caracteres</mat-error>
+            }
+          }
+        </mat-form-field>
 
-<input type="text" id="nombre" formControlName="nombre"/>
-@if((formulario.controls['nombre'].dirty || formulario.controls['nombre'].touched)&&this.formulario.controls['nombre'].errors?.['required']){
-    <span>FEaboñudfaw</span>
-}
-</p>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Apellidos</mat-label>
+          <input matInput placeholder="Escribe tus apellidos" formControlName="apellidos">
+          
+          @if (formulario.get('apellidos')?.touched && formulario.get('apellidos')?.hasError('required')) {
+            <mat-error>Los apellidos son obligatorios</mat-error>
+          }
+        </mat-form-field>
 
-<p>
+      </mat-card-content>
 
-<span>Apellidos:</span>
-
-<input type="text" formControlName="apellidos"/>
-
-</p>
-
-<button type="button" (click)="saluda()">Saludar</button>
-
-</form>
+      <mat-card-actions align="end">
+        <button (click)="saluda()" 
+                [disabled]="formulario.invalid" 
+                mat-raised-button 
+                color="primary">
+          Entrar
+        </button>
+      </mat-card-actions>
+    </form>
+  </mat-card>
+</div>

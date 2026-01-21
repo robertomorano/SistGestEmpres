@@ -1,10 +1,13 @@
 import {FormGroup, FormControl, ReactiveFormsModule} from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
-
+import {MatFormFieldModule} from '@angular/material/form-field'; 
+import { MatCardModule } from '@angular/material/card'; 
+import { MatInputModule } from '@angular/material/input';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-formulario',
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, MatFormFieldModule, MatCardModule, MatInputModule],
   templateUrl: './formulario.html',
   styleUrl: './formulario.css',
 })
