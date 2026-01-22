@@ -1,10 +1,10 @@
-﻿
+﻿using Microsoft.AspNetCore.SignalR;
 using ChatTest.Entities;
-using Microsoft.AspNetCore.SignalR;
+
 
 namespace SignalRChat.Hubs
 {
-    public class ChatHub : Hub
+    public class chatHub : Hub
     {
         public async Task SendMessage(clsMensajeUsuario message)
         {

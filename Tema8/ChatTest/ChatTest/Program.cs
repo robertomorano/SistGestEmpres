@@ -19,7 +19,7 @@ builder.Services.AddCors(options =>
 
 
 var app = builder.Build();
-app.UseCors("AllowReactNative");
+
 
 
 // Configure the HTTP request pipeline.
@@ -35,9 +35,11 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+//app.UseCors("AllowReactNative");
+
 app.UseAuthorization();
 
 app.MapRazorPages();
-app.MapHub<ChatHub>("/chatHub");
+app.MapHub<chatHub>("/chatHub");
 
 app.Run();

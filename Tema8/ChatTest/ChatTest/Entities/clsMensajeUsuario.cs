@@ -5,10 +5,11 @@
         public string user { get; set; }
         public string message { get; set; }
 
-        clsMensajeUsuario(string user, string message)
+        public clsMensajeUsuario(string User, string Message)
         {
-            user = user;
-            message = message;
+            this.user = User;
+            this.message = Message;
         }
+
     }
 }
