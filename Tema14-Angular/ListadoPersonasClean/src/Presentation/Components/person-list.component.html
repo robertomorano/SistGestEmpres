@@ -1,0 +1,43 @@
+<div class="person-list-container">
+  <div class="header">
+    <h2>Person List</h2>
+    <button 
+      (click)="refreshPeople()" 
+      [disabled]="isLoading()"
+      class="refresh-btn">
+      {{ isLoading() ? 'Loading...' : 'Refresh' }}
+    </button>
+  </div>
+
+  @if (error()) {
+    <div class="error-message">
+      {{ error() }}
+    </div>
+  }
+
+  @if (isLoading()) {
+    <div class="loading">
+      Loading people...
+    </div>
+  }
+
+  @if (!isLoading() && !error() && displayPeople().length === 0) {
+    <div class="no-data">
+      No people found
+    </div>
+  }
+
+  @if (!isLoading() && !error() && displayPeople().length > 0) {
+    <div class="person-grid">
+      @for (person of displayPeople(); track trackByPersonId) {
+        <div class="person-card">
+          <div class="person-info">
+            <h3>{{ person.persona.name }} {{ person.persona.surname }}</h3>
+            <p class="department">Department: {{ person.departamento }}</p>
+            <p class="id">ID: {{ person.persona.id }}</p>
+          </div>
+        </div>
+      }
+    </div>
+  }
+</div>

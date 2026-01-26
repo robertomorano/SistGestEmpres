@@ -1,9 +1,9 @@
 import { Persona } from "../Entities/Persona";
 
 export interface IRepositoryPersonas {
-    getListadoCompletoPersonas(): Persona[];
-
-    insertPersona(persona :Persona): number;
-    deletePersona(id : number ): number;
-    updatePersona(persona:Persona, id:number):number;
+    getPersonDepartment(id:number): Promise<string>;
+  getPerson(id: number): Promise<Persona>;
+  getPeople(): Promise<Persona[]>;
+  deletePerson(id: number):Promise<number>;
+  putPerson(person : Persona):Promise<number>;
 }

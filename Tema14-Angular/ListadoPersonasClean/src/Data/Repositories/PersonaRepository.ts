@@ -1,6 +1,8 @@
-import { injectable } from "inversify";
+import { inject, injectable } from "inversify";
 import { Persona } from "../../Domain/Entities/Persona"
 import { IRepositoryPersonas } from "../../Domain/Repositories/IRepositoryPersonas";
+import { TYPES } from "../../Core/types";
+import APIAzure from "../Connection/ApisCalling";
 
 
 
@@ -9,46 +11,161 @@ import { IRepositoryPersonas } from "../../Domain/Repositories/IRepositoryPerson
 @injectable()
 export class PersonasRepository implements IRepositoryPersonas{
 
-    _personas = [
-            new Persona(1, 'Fernando', 'Galiana Fernández')
-        ];
-    _nextId:number = 0;
-    insertPersona(persona: Persona): number {
-        persona.id = this._nextId++;
-        this._personas.push(persona);
-        
-        return persona.id;
+   constructor(
+    @inject(TYPES.Connection) private connection: APIAzure
+  ) {}
+    
+
+  async getPerson(id: number): Promise<Persona> {
+    try {
+      const baseUrl = this.connection.getConnection();
+      const response = await fetch(`${baseUrl}/api/Personas/${id}`, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      
+      // Asumiendo que la API devuelve un objeto similar a getPeople
+      const personData = data.persona || data;
+      
+      return new Persona(
+        personData.id,
+        personData.name,
+        personData.surname,
+        personData.departamento
+      );
+    } catch (error) {
+      console.error('Error en PersonRepo.getPerson:', error);
+      throw new Error(`No se pudo obtener la persona con id ${id}`);
     }
-    deletePersona(id: number): number {
-        const index = this._personas.findIndex(p => p.id === id);
+  }
 
-        if (index !== -1) {
-            this._personas.splice(index, 1);
-        }
-        return index
+  async getPersonDepartment(id: number): Promise<string> {
+    try {
+      const baseUrl = this.connection.getConnection();
+      const response = await fetch(`${baseUrl}/api/PersonasDepartamentoList/${id}`, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+
+      // Extraer el nombre del departamento
+      const departmentName = data.departamento?.name || data.nombreDepartamento;
+
+      if (!departmentName) {
+        throw new Error('No se encontró el nombre del departamento');
+      }
+
+      return departmentName;
+    } catch (error) {
+      console.error('Error en PersonRepo.getPersonDepartment:', error);
+      throw new Error(`No se pudo obtener el departamento de la persona con id ${id}`);
     }
-    updatePersona(persona: Persona, id: number): number {
-        const index = this._personas.findIndex(p => p.id === id);
+  }
 
-        if (index !== -1) {
-        
-            this._personas[index].nombre = persona.nombre;
-            this._personas[index].apellidos = persona.apellidos;
-             
-        }
+  async putPerson(person: Persona): Promise<number> {
+    try {
+      const baseUrl = this.connection.getConnection();
+      const response = await fetch(`${baseUrl}/api/Personas/${person.id}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          id: person.id,
+          name: person.name,
+          surname: person.surname,
+          departamento: person.departamento,
+        }),
+      });
 
-        
-        return index;
-  
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      // Retornar el status code o el id de la persona actualizada
+      return response.status;
+    } catch (error) {
+      console.error('Error en PersonRepo.putPerson:', error);
+      throw new Error('No se pudo actualizar la persona');
     }
+  }
 
+  async deletePerson(id: number): Promise<number> {
+    try {
+      const baseUrl = this.connection.getConnection();
+      const response = await fetch(`${baseUrl}/api/Personas/${id}`, {
+        method: 'DELETE',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
 
-    getListadoCompletoPersonas(): Persona[] {
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
 
-
-        //En un futuro, esto podría hacer llamadas a una API que nos ofreciera los datos
-        return this._personas
+      // Retornar el status code
+      return response.status;
+    } catch (error) {
+      console.error('Error en PersonRepo.deletePerson:', error);
+      throw new Error(`No se pudo eliminar la persona con id ${id}`);
     }
+  }
+
+  async getPeople(): Promise<Persona[]> {
+    try {
+      const baseUrl = this.connection.getConnection();
+      const response = await fetch(`${baseUrl}/api/Personas`, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      const array: Persona[] = [];
+
+      console.log(data);
+
+      data.forEach((element: any) => {
+        const personData = element.persona || element;
+        array.push(
+          new Persona(
+            personData.id,
+            personData.name,
+            personData.surname,
+            personData.departamento
+          )
+        );
+      });
+
+      console.log(array);
+
+      return array;
+    } catch (error) {
+      console.error('Error en PersonRepo.getPeople:', error);
+      throw new Error('No se pudieron obtener las personas');
+    }
+  }
 }
 
 /*

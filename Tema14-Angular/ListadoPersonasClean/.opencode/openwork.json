@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "workspace": {
+    "name": "ListadoPersonasClean",
+    "createdAt": 1769446857159,
+    "preset": "starter"
+  },
+  "authorizedRoots": [
+    "C:\\Users\\rober\\Documents\\GitHub\\SistGestEmpres\\Tema14-Angular\\ListadoPersonasClean"
+  ]
+}

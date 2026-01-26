@@ -1,5 +1,6 @@
+import { PersonDepartmentNameDto } from "../dto/PersonDpartmentNameDto";
 import { Persona } from "../Entities/Persona";
 
 export interface IGetPersonasUseCase {
-    execute(): Persona[];
+    getPeople(): Promise<PersonDepartmentNameDto[]>;
 }
