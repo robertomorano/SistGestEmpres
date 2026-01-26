@@ -1,0 +1,41 @@
+<p>Listado de Personas</p>
+
+<table width="100%" border="1">
+
+<th>Id</th>
+
+<th>Nombre</th>
+
+<th>Apellidos</th>
+
+<th>Fecha de Nacimiento</th>
+
+<tbody>
+
+@for (persona of listadoPersonas(); track persona.id) {
+
+<tr>
+
+<td>{{ persona.id }}</td>
+
+<td>{{ persona.nombre }}</td>
+
+<td>{{ persona.apellidos }}</td>
+
+<td>{{ persona.fechaNac | date: "dd/MM/yyyy" }}</td>
+
+</tr>
+
+} @empty {
+
+<tr>
+
+<td colspan="4">No se encontraron personas en el sistema.</td>
+
+</tr>
+
+}
+
+</tbody>
+
+</table>
