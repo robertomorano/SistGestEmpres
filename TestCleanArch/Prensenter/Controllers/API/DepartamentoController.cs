@@ -106,8 +106,14 @@ namespace Prensenter.Controllers.API
 
             try
             {
-
-                result = _departamentoUseCase.UpdateDepartamento(departamento);
+                if (_departamentoUseCase.GetDepartamentoById(id) != null)
+                {
+                    result = _departamentoUseCase.UpdateDepartamento(departamento);
+                }
+                else
+                {
+                    result = _departamentoUseCase.CreateDepartamento(departamento);
+                }
 
 
 

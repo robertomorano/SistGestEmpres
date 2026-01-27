@@ -107,8 +107,16 @@ namespace Prensenter.Controllers.API
 
             try
             {
+				if (_personaUseCase.GetPersonById(id) != null)
+				{
+					result = _personaUseCase.UpdatePerson(person); 
+				}
+				else
+				{
+					result = _personaUseCase.CreatePerson(person);
+				}
 
-                result = _personaUseCase.UpdatePerson(person);
+				
 
 
 
