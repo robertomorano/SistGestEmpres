@@ -38,7 +38,7 @@ namespace Domain.UseCases
             // Validación de regla de negocio: no se puede borrar un departamento si tiene personas
             int personasEnDepartamento = _departamentoRepo.CheckPersonasInDepartamento(id);
 
-            if (personasEnDepartamento > 0)
+            if (personasEnDepartamento <= 0)
             {
                 // Retorna -1 para indicar que no se puede eliminar
                 return -1;

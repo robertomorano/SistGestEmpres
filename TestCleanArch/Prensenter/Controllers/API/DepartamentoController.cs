@@ -139,7 +139,7 @@ namespace Prensenter.Controllers.API
             {
 
                 numFilasAfectadas = _departamentoUseCase.DeleteDepartamento(id);
-                if (numFilasAfectadas == 0)
+                if (numFilasAfectadas <= 0)
                 {
                     salida = NotFound();
                 }
